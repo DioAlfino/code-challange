@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className="max-container padding-container flex flex-col gap-20 py-10 md:gap-28 lg:py-20">
       {/* Company History Section */}
       <section className="flex flex-col gap-10">
-        <h2 className=" bold-20 lg:bold-32 mt-5 capitalize">Our History</h2>
+        <h2 className="bold-20 lg:bold-32 mt-5 capitalize">Our History</h2>
         <p className="regular-16 text-black">
           Our journey began in 2010 with a passion for offroad travel and
           exploration. Founded by a group of adventurers who shared a love for
@@ -35,10 +35,10 @@ const AboutUs = () => {
         <p className="regular-16 text-black">
           Our community of offroad enthusiasts is what makes us unique. We take
           pride in creating a supportive and inclusive environment where
-          everyone is welcome. Whether you're a seasoned offroader or a newcomer
-          to the world of adventure travel, you'll find a place in our
-          community. We are passionate, dedicated, and always striving to push
-          the boundaries of what is possible in offroad travel.
+          everyone is welcome. Whether you&apos;re a seasoned offroader or a
+          newcomer to the world of adventure travel, you&apos;ll find a place in
+          our community. We are passionate, dedicated, and always striving to
+          push the boundaries of what is possible in offroad travel.
         </p>
       </section>
     </div>

@@ -1,5 +1,7 @@
 "use client";
+
 import React, { useEffect, useState, useCallback, memo } from "react";
+import Image from "next/image";
 
 interface TeamMember {
   name: string;
@@ -9,14 +11,29 @@ interface TeamMember {
   location: string;
 }
 
+const SkeletonMemberCard: React.FC = () => (
+  <div className="bg-gray-200 p-6 rounded-lg shadow-md animate-pulse">
+    <div className="w-32 h-32 rounded-full mx-auto mb-4"></div>
+    <h2 className="text-xl font-semibold text-center bg-gray-300 h-6 mb-2"></h2>
+    <p className="text-center bg-gray-300 h-4 mb-2"></p>
+    <p className="text-center bg-gray-300 h-4"></p>
+  </div>
+);
+
 const TeamMemberCard: React.FC<{ member: TeamMember }> = memo(({ member }) => (
   <div className="bg-white p-6 rounded-lg shadow-md">
-    <img
-      src={member.picture}
-      alt={member.name}
-      className="w-32 h-32 rounded-full mx-auto mb-4"
-      loading="lazy"
-    />
+    <div className="w-32 h-32 rounded-full mx-auto mb-4 relative">
+      <Image
+        src={member.picture}
+        alt={member.name}
+        className="rounded-full"
+        layout="fixed"
+        width={128}
+        height={128}
+        objectFit="cover"
+        loading="lazy"
+      />
+    </div>
     <h2 className="text-xl font-semibold text-center">{member.name}</h2>
     <p className="text-center text-gray-600">{member.location}</p>
     <div className="mt-4">
@@ -42,7 +59,7 @@ const Teams: React.FC = () => {
         name: `${user.name.first} ${user.name.last}`,
         email: user.email,
         phone: user.phone,
-        picture: user.picture.large,
+        picture: user.picture.thumbnail,
         location: `${user.location.city}, ${user.location.country}`,
       }));
       setTeamMembers(members);
@@ -58,7 +75,18 @@ const Teams: React.FC = () => {
   }, [fetchTeamMembers]);
 
   if (loading) {
-    return <div className="text-center py-10">Loading...</div>;
+    return (
+      <div className="min-h-screen bg-gray-100 py-10">
+        <div className="container mx-auto">
+          <h1 className="text-4xl font-bold text-center mb-10">Our Team</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {[...Array(9)].map((_, index) => (
+              <SkeletonMemberCard key={index} />
+            ))}
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
