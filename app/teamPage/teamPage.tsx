@@ -19,6 +19,7 @@ const SkeletonMemberCard: React.FC = () => (
     <p className="text-center bg-gray-300 h-4"></p>
   </div>
 );
+SkeletonMemberCard.displayName = "SkeletonMemberCard";
 
 const TeamMemberCard: React.FC<{ member: TeamMember }> = memo(({ member }) => (
   <div className="bg-white p-6 rounded-lg shadow-md">
@@ -42,6 +43,7 @@ const TeamMemberCard: React.FC<{ member: TeamMember }> = memo(({ member }) => (
     </div>
   </div>
 ));
+TeamMemberCard.displayName = "TeamMemberCard";
 
 const Teams: React.FC = () => {
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);

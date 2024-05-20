@@ -27,4 +27,6 @@ const Testimonials: React.FC = React.memo(() => {
   );
 });
 
+Testimonials.displayName = "Testimonials";
+
 export default Testimonials;
