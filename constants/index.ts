@@ -17,32 +17,32 @@ export const PEOPLE_URL = [
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: "Real maps can be offline",
+    title: "Real-time Offroad Maps",
     icon: "/map.svg",
     variant: "green",
     description:
-      "We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location",
+      "Access real-time offroad maps even when offline. Our application ensures you have access to detailed maps and navigation assistance no matter the location or signal strength.",
   },
   {
-    title: "Set an adventure schedule",
+    title: "Adventure Scheduling",
     icon: "/calendar.svg",
     variant: "green",
     description:
-      "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+      "Plan your offroad adventures with ease. Utilize our scheduling feature to organize trips with friends and take advantage of exclusive holiday offers.",
   },
   {
-    title: "Technology using augment reality",
+    title: "Augmented Reality Technology",
     icon: "/tech.svg",
     variant: "green",
     description:
-      "Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection",
+      "Experience offroad navigation like never before with augmented reality technology. Our app guides you through trails and terrains, even without an internet connection.",
   },
   {
-    title: "Many new locations every month",
+    title: "Discover New Offroad Trails",
     icon: "/location.svg",
     variant: "orange",
     description:
-      "Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing",
+      "Explore a wide range of offroad trails every month. Join our global community of offroad enthusiasts to discover and share the best offroad experiences.",
   },
 ];
 
@@ -51,7 +51,7 @@ export const FOOTER_LINKS = [
   {
     title: "Learn More",
     links: [
-      "About Hilink",
+      "About Offroad Adventures",
       "Press Releases",
       "Environment",
       "Jobs",
@@ -61,20 +61,20 @@ export const FOOTER_LINKS = [
   },
   {
     title: "Our Community",
-    links: ["Climbing xixixi", "Hiking hilink", "Hilink kinthill"],
+    links: ["Offroad Explorers", "Trailblazing Trekkers", "Adventure Seekers"],
   },
 ];
 
 export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
   links: [
-    { label: "Admin Officer", value: "123-456-7890" },
-    { label: "Email Officer", value: "hilink@akinthil.com" },
+    { label: "Customer Support", value: "123-456-7890" },
+    { label: "Email Support", value: "offroad@adventures.com" },
   ],
 };
 
 export const SOCIALS = {
-  title: "Social",
+  title: "Connect with Us",
   links: [
     "/facebook.svg",
     "/instagram.svg",

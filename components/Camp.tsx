@@ -25,8 +25,12 @@ const CampSite = ({
             <Image src="/folded-map.svg" alt="map" width={28} height={28} />
           </div>
           <div className="flex flex-col gap-1">
-            <h4 className="bold-18 text-white">{title}</h4>
-            <p className="regular-14 text-white">{subtitle}</p>
+            <h4 className="bold-18 text-white bg-black bg-opacity-50 px-2 rounded-lg">
+              {title}
+            </h4>
+            <p className="regular-14 text-white bg-black bg-opacity-50 px-2 rounded-lg">
+              {subtitle}
+            </p>
           </div>
         </div>
         <div className="flexCenter gap-6">
