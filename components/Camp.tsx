@@ -56,14 +56,14 @@ const Camp = () => {
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
         <CampSite
           backgroundImage="bg-bg-img-1"
-          title="Prigen, pasuruan"
-          subtitle="putuj truno camp"
+          title="Prigen, Pasuruan"
+          subtitle="Putuj Truno Camp"
           peopleJoined="50+ Joined"
         />
         <CampSite
           backgroundImage="bg-bg-img-2"
           title="Mountain View Camp"
-          subtitle="Somewhere in the wilderness"
+          subtitle="Somewhere in the Wilderness"
           peopleJoined="50+ Joined"
         />
       </div>
@@ -73,10 +73,10 @@ const Camp = () => {
             <strong>Feeling lost</strong> and not knowing the way?
           </h2>
           <p className="regular-14 xl:regular-16 mt-5 text-white">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            perferendis nostrum, tempora aliquam officia reiciendis repellat
-            nesciunt minima! Iure nulla doloribus assumenda quo voluptatibus
-            soluta cum, distinctio consequuntur quos! Ratione!
+            Explore the unknown with confidence and embark on an offroad journey
+            where every turn becomes an adventure. Let our expert guides lead
+            the way, ensuring a memorable experience filled with discovery and
+            excitement.
           </p>
           <Image
             src="/quote.svg"

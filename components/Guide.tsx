@@ -3,24 +3,24 @@ import React from "react";
 
 const Guide = () => {
   return (
-    <section className=" flexCenter flex-col">
+    <section className="flexCenter flex-col">
       <div className="padding-container max-container w-full pb-24">
         <Image src="/camp.svg" alt="camp" width={50} height={50} />
         <p className="uppercase regular-18 -mt-1 mb-3 text-green-50">
-          We are here for you
+          We're Here for You
         </p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[390px]">
-            Guide you to easy path
+            Expert Guides for Your Offroad Adventures
           </h2>
           <p className="regular-16 text-gray-30 xl:max-w-[520px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-            eaque aliquid iste eligendi tempora aliquam, laborum laudantium
-            veniam nemo rerum eos consequuntur perferendis molestiae est.
+            Embark on an unforgettable journey with our expert guides who will
+            lead you through rugged terrains and scenic landscapes. We'll ensure
+            every moment of your adventure becomes an unforgettable experience.
           </p>
         </div>
       </div>
-      <div className=" flexCenter max-container relative w-full">
+      <div className="flexCenter max-container relative w-full">
         <Image
           src="/boat.webp"
           alt="boat"
@@ -40,13 +40,13 @@ const Guide = () => {
             <div className="flex w-full flex-col">
               <div className="flexBetween w-full">
                 <p className="regular-16 text-gray-20">Destination</p>
-                <p className="bold-16 text-green-50">48 min</p>
+                <p className="bold-16 text-green-50">48 minutes</p>
               </div>
-              <p className="bold-20 mt-2">Aguas calientse</p>
+              <p className="bold-20 mt-2">Aguas Calientes</p>
             </div>
             <div className="flex w-full flex-col">
-              <p className="regular-16 text-gray-20">Start track</p>
-              <h4 className="bold-20 mt-2">wonororjo pasuruan</h4>
+              <p className="regular-16 text-gray-20">Starting Point</p>
+              <h4 className="bold-20 mt-2">Wonororjo Pasuruan</h4>
             </div>
           </div>
         </div>

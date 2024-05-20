@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="border bg-gray-20" />
-        <p className="regular-14 w-full text-center text-gray-30">
+        <p className="regular-14 w-full text-center text-black">
           2024 Dio || All rights reserved
         </p>
       </div>
