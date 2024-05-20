@@ -33,8 +33,8 @@ module.exports = {
         "bg-img-1": "url('/img-1.webp')",
         "bg-img-2": "url('/img-2.webp')",
         "feature-bg": "url('/feature-bg.webp')",
-        pattern: "url('/pattern.png')",
-        "pattern-2": "url('/pattern-bg.png')",
+        pattern: "url('/pattern.webp')",
+        "pattern-2": "url('/pattern-bg.webp')",
       },
       screens: {
         xs: "400px",
