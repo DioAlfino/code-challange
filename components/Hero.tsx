@@ -19,9 +19,9 @@ const Hero = () => {
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
           Embark on an exhilarating offroad journey and discover the wonders of
           nature! Experience the thrill of rugged terrains, breathtaking
-          landscapes, and unforgettable adventures. Whether you're a seasoned
-          offroader or a novice explorer, there's an adventure waiting just for
-          you.
+          landscapes, and unforgettable adventures. Whether you&apos;re a
+          seasoned offroader or a novice explorer, there&apos;s an adventure
+          waiting just for you.
         </p>
 
         <div className="my-11 flex flex-wrap gap-5">
