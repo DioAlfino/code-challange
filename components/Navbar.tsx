@@ -1,28 +1,36 @@
+"use client";
+
+import { useState } from "react";
 import { NAV_LINKS } from "@/constants";
-import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Button from "./Button";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className=" flexBetween max-container padding-container relative z-30 py-5">
+    <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
         <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} />
       </Link>
-      <ul className=" hidden h-full gap-12 lg:flex">
+      <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
           <Link
             href={link.href}
             key={link.key}
-            className=" regular-16 text-black flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+            className="regular-16 text-black flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
           >
             {link.label}
           </Link>
         ))}
       </ul>
-      <div className=" lg:flexCenter hidden">
+      <div className="lg:flexCenter hidden">
         <Button
           type="button"
           title="Login"
@@ -35,8 +43,25 @@ const Navbar = () => {
         alt="menu"
         width={32}
         height={32}
-        className=" inline-block cursor-pointer lg:hidden"
+        className="inline-block cursor-pointer lg:hidden"
+        onClick={toggleMenu}
       />
+      {isMenuOpen && (
+        <div className="absolute top-full left-0 w-full bg-white shadow-lg lg:hidden">
+          <ul className="flex flex-col items-center gap-4 p-4">
+            {NAV_LINKS.map((link) => (
+              <Link
+                href={link.href}
+                key={link.key}
+                className="regular-16 text-black cursor-pointer transition-all hover:font-bold"
+                onClick={toggleMenu}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
